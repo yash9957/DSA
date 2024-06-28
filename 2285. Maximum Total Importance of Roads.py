@@ -12,6 +12,7 @@ class Solution:
             degrees[b]+=1
 
         sorted_cities = sorted(range(n), key = lambda x: degrees[x], reverse = True)
+
         value = n
         city_values = [0] * n
         for city in sorted_cities:
